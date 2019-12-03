@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.mycompany.mavenprojectpark.MInfoController">
+  <children>
+    <AnchorPane id="AnchorPane" layoutY="14.0" prefHeight="850.0" prefWidth="600.0" styleClass="mainFxmlClass">
+      <children>
+        <Pane layoutY="-14.0" prefHeight="864.0" prefWidth="600.0" style="-fx-background-color: grey;">
+          <children>
+            <Label layoutX="112.0" layoutY="30.0" prefHeight="64.0" prefWidth="180.0" text="MOBILE" textFill="#00b588">
+              <font>
+                <Font size="48.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="292.0" layoutY="30.0" text="BANKING" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="219.0" prefHeight="94.0" prefWidth="455.0" text="Saldo Anda Saat Ini" textFill="WHITE">
+              <font>
+                <Font size="35.0" />
+              </font>
+            </Label>
+            <Label fx:id="isi_saldo" alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="357.0" minHeight="79.0" prefHeight="150.0" prefWidth="328.0" textFill="WHITE">
+              <font>
+                <Font size="55.0" />
+              </font>
+            </Label>
+            <Label fx:id="lbl_date" layoutX="115.0" layoutY="119.0" prefWidth="102.0" text="TGL" textFill="WHITE">
+              <font>
+                <Font size="14.0" fx:id="x2" />
+              </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="40.0" onMouseClicked="#back_btn" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../icons/icons8-back-arrow-90.png" />
+              </image>
+            </ImageView>
+            <Label fx:id="lbl_time" font="$x2" layoutX="227.0" layoutY="119.0" prefWidth="82.0" text="WKT" textFill="WHITE" />
+            <Line endX="498.99993896484375" layoutX="101.0" layoutY="183.0" startX="-100.0" />
+            <Label layoutX="115.0" layoutY="94.0" text="M-info :">
+              <font>
+                <Font name="System Bold" size="15.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+      </children>
+      <stylesheets>
+        <URL value="@login.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@menu.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller=".AntarBankController">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="-232.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+      <children>
+        <AnchorPane id="AnchorPane" layoutY="14.0" prefHeight="850.0" prefWidth="600.0" styleClass="mainFxmlClass">
+          <children>
+            <Pane layoutY="-14.0" prefHeight="864.0" prefWidth="600.0" style="-fx-background-color: grey;">
+              <children>
+                <Label layoutX="112.0" layoutY="30.0" prefHeight="64.0" prefWidth="180.0" text="MOBILE" textFill="#00b588">
+                  <font>
+                    <Font size="48.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label font="$x1" layoutX="292.0" layoutY="30.0" text="BANKING" />
+                <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="17.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../icons/icons8-back-arrow-90.png" />
+                  </image>
+                </ImageView>
+                <TextField layoutX="98.0" layoutY="182.0" prefHeight="50.0" prefWidth="423.0" />
+                <TextField layoutX="98.0" layoutY="280.0" prefHeight="50.0" prefWidth="423.0" />
+                <Label layoutX="111.0" layoutY="151.0" text="No.Rekening Tujuan">
+                  <font>
+                    <Font name="System Bold" size="15.0" fx:id="x2" />
+                  </font>
+                </Label>
+                <Label font="$x2" layoutX="112.0" layoutY="254.0" text="Bank" />
+              </children>
+            </Pane>
+          </children>
+          <stylesheets>
+            <URL value="@login.css" />
+          </stylesheets>
+        </AnchorPane>
+      </children>
+      <stylesheets>
+        <URL value="@menu.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>
